@@ -43,6 +43,26 @@ export const Register = () => {
             <input onChange={handleInput} id='email' className='border' type='email' />
             <input onChange={handleInput} id='password' className='border' type='password' />
 
+            <GoogleLogin
+                onSuccess={credentialResponse => {
+                    console.log(credentialResponse);
+                    console.log(credentialResponse);
+                    console.log(credentialResponse);
+                }}
+                onError={() => {
+                    console.log('Login Failed');
+                }}
+            />;
+                <GoogleLogin
+                onSuccess={credentialResponse => {
+                    console.log(credentialResponse);
+                    console.log(credentialResponse);
+                    console.log(credentialResponse);
+                }}
+                onError={() => {
+                    console.log('Login Failed');
+                }}
+            />;
 
             <GoogleLogin
                 onSuccess={credentialResponse => {
