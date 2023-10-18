@@ -42,14 +42,20 @@ export const Register = () => {
             <input onChange={handleInput} id='username' className='border' type='text' />
             <input onChange={handleInput} id='email' className='border' type='email' />
             <input onChange={handleInput} id='password' className='border' type='password' />
+
+
             <GoogleLogin
                 onSuccess={credentialResponse => {
+                    console.log(credentialResponse);
+                    console.log(credentialResponse);
                     console.log(credentialResponse);
                 }}
                 onError={() => {
                     console.log('Login Failed');
                 }}
             />;
+
+            {console.log("asdasdasd")}
             <button onClick={() => { registerUser() }}>register</button>
         </div>
     )
