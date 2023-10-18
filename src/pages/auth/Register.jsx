@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useCreateUser } from '../../services/auth/register_user'
+import { GoogleLogin } from '@react-oauth/google'
 
 export const Register = () => {
     const [Username, setUsername] = useState("")
@@ -23,7 +24,7 @@ export const Register = () => {
     }
 
     if (error) {
-        console.log(error.response.data.message , "ini Eror gess"
+        console.log(error.response.data.message, "ini Eror gess"
         )
     }
 
@@ -41,6 +42,14 @@ export const Register = () => {
             <input onChange={handleInput} id='username' className='border' type='text' />
             <input onChange={handleInput} id='email' className='border' type='email' />
             <input onChange={handleInput} id='password' className='border' type='password' />
+            <GoogleLogin
+                onSuccess={credentialResponse => {
+                    console.log(credentialResponse);
+                }}
+                onError={() => {
+                    console.log('Login Failed');
+                }}
+            />;
             <button onClick={() => { registerUser() }}>register</button>
         </div>
     )
