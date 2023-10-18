@@ -34,6 +34,7 @@ export const Register = () => {
             "password": Password
         })
     }
+    console.log("asdlkasjdlkjasld")
 
     return (
         <div>
