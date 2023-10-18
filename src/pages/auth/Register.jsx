@@ -40,7 +40,7 @@ export const Register = () => {
         <div>
             <input onChange={handleInput} id='username' className='border' type='text' />
             <input onChange={handleInput} id='email' className='border' type='email' />
-            {/* <input onChange={handleInput} id='password' className='border' type='password' /> */}
+            <input onChange={handleInput} id='password' className='border' type='password' />
             <button onClick={() => { registerUser() }}>register</button>
         </div>
     )
