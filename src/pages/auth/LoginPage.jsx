@@ -48,7 +48,7 @@ export const LoginPage = () => {
           console.log('Login Failed');
         }}
       />;
-      <button onClick={() => { registerUser() }}>login</button>
+      <button className='bg-red-700' onClick={() => { registerUser() }}>login</button>
     </div>
   )
 }
