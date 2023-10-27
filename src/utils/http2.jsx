@@ -8,7 +8,6 @@ import axios from "axios";
 const Token = localStorage.getItem("token") ? localStorage.getItem("token") : undefined
 const Token2 = sessionStorage.getItem("token") ? sessionStorage.getItem("token") : undefined
 
-
 const http2 = axios.create({
   baseURL: process.env.REACT_APP_SERVER,
   timeout: 30000,
