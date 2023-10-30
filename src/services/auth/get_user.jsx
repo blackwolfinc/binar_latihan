@@ -2,10 +2,6 @@ import { useQuery } from "@tanstack/react-query";
 
 import { API_ENDPOINT } from "../../utils/api-endpoint";
 import http3 from "../../utils/http3";
-import { toast } from "react-toastify";
-
-
-
 
 
 const fetchUserData = async ({ queryKey }) => {

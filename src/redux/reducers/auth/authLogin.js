@@ -14,7 +14,7 @@ const authLoginSlice = createSlice({
             state.token = action.payload;
           },
         setIsLoggedIn: (state, action) => {
-            state.isLogin = action.payload;
+            state = { ...state , isLogin : action.payload}
           },
         setUser: (state, action) => {
             state.user = action.payload;

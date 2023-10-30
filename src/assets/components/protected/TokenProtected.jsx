@@ -13,7 +13,7 @@ function TokenProtected({ children }) {
     }
   }, []);
 
-  
+
 
   return children;
 }

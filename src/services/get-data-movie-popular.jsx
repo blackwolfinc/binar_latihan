@@ -10,7 +10,7 @@ const fetchDataMoviePopular = async (page) => {
 
 
 // untuk Dinamis Handle√
-const useMovieDataPopularQuery = (page) => {
+const useMovieDataPopularQuery = (page , token) => {
     return useQuery(["userDataMoviePopular", page], () => fetchDataMoviePopular(page));
   };
 
