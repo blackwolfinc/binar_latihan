@@ -13,7 +13,6 @@ const fetchDataMovieDetail = async ({queryKey}) => {
 // untuk Dinamis Handle√
 const useMovieDataQueryDetail = (options) => {
     return useQuery([API_ENDPOINT.DETAIL_MOVIE , options] , fetchDataMovieDetail)
-
   };
 
 
